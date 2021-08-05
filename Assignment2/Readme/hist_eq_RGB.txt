@@ -1,0 +1,21 @@
+- Purpose of this code
+ This code is for increasing image contrast and so that we can make intensities of input image distributed more even. 
+ It is applied to R,G,B channel repectively. 
+ Therefore, user of this code can understand equalizing intensities of R,G,B channel is inappropriate because R,G,B channel are dependent to each other.  
+
+- How to run this code
+ Through visual studio. Run hist_qe_RGB.cpp with 'input.jpg' image.
+
+- How to adjust parameters (if any)
+ void hist_eq_Color(Mat &input, Mat &equalized, G(*trans_func)[3], float **CDF);
+ Mat &input: Give Mat variable which would be equalized(RGB image).
+ Mat &equalized: Give Mat variable to save equalized image(RGB image).
+ G(*trans_func)[3]: Give array of which size is 256(the number of levels of intensity). It is isnitialized with 0s. This contain trans_function for each R, G, B channel.
+ float **CDF: Give double pointer which point to CDF of R, G, B 
+
+- How to define default parameters
+ void hist_eq_Color(Mat &input, Mat &equalized, G(*trans_func)[3], float **CDF);
+ Mat &input: Give Mat variable which would be equalized(RGB image).
+ Mat &equalized: Give Mat variable to save equalized image(RGB image).
+ G(*trans_func)[3]: Give array of which size is 256(the number of levels of intensity). It is isnitialized with 0s. This contain trans_function for each R, G, B channel.
+ float **CDF: Give double pointer which point to CDF of R, G, B 

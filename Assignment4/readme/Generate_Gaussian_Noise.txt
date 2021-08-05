@@ -1,0 +1,17 @@
+- Purpose of this code
+ This code is made to generate Gaussian noise on the image. 
+
+- How to run this code
+ Load "Generate_Gaussian_Noise.cpp' through the Visual Studio with the input image 'lena.jpg'
+
+- How to adjust parameters (if any)
+ Mat Add_Gaussian_noise(const Mat input, double mean, double sigma);
+ const Mat input: Give input image to give Gaussian noise.
+ double mean: Give mean value for the Gaussian Function(Probability of the noise).
+ double sigma: Give sigma value for the Gaussian Function(Probability of the noise).
+
+- How to define default parameters
+ Mat Add_Gaussian_noise(const Mat input, double mean, double sigma);
+ const Mat input: Give input image to give Gaussian noise. In this code, it is 'lena.jpg'.
+ double mean: Give mean value for the Gaussian Function(Probability of the noise). In this code, I gave 0 to make zero-mean AWGN. 
+ double sigma: Give sigma value for the Gaussian Function(Probability of the noise). In this code I gave 1.

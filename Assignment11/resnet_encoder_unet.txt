@@ -1,0 +1,4 @@
+- Purpose of this code
+ This code is made to implement Encoder using ResNet50.
+- How to run this code
+ Load this code with main, datasets and modules. 
